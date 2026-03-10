@@ -1,8 +1,9 @@
 import axios from "axios";
 
-// Backend API runs on http://127.0.0.1:8000
+// Backend API runs on https://adaptive-engine.onrender.com
 // Note: CORS stands for Cross-Origin Resource Sharing. Backend already has CORS enabled for localhost:5173
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "https://adaptive-engine.onrender.com";
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
