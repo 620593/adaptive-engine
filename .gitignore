@@ -1,16 +1,52 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-# .gitignore
+# ── Environment variables (NEVER commit these) ────────────────────────────────
 .env
-venv/
+.env.local
+.env.development
+.env.production
+*.env
+
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
 *.pyc
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── uv ────────────────────────────────────────────────────────────────────────
+.uv/
+
+# ── Node / React / Vite ───────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+*.local
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+
+# ── Testing ───────────────────────────────────────────────────────────────────
 .pytest_cache/
+htmlcov/
+.coverage
